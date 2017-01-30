@@ -35,7 +35,7 @@ film5.save()
 film6 = Film.new({'title' => 'Das Metke Met Rode Haren', 'price' => 9.50})
 film6.save()
 
-ticket1 = Ticket.new({'cust_id' => customer6.id, 'film_id' => film1.id})
+ticket1 = Ticket.new({'cust_id' => customer6.id, 'film_id' => film3.id})
 ticket1.save()
 ticket2 = Ticket.new({'cust_id' => customer5.id, 'film_id' => film1.id})
 ticket2.save()

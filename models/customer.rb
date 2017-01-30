@@ -52,4 +52,11 @@ class Customer
     return Film.get_many(sql)
   end
 
+  def update_funds
+    funds = '#{@funds}'
+    price = '#{@price}' 
+    sql = "UPDATE customers SET (funds) = (funds - price) WHERE id = #{@id};"
+    SqlRunner.run(sql)
+  end
+
 end
